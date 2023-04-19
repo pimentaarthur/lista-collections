@@ -1,0 +1,30 @@
+using System;
+
+using System.Collections;
+
+class program{
+
+    static void Main(String [] args){
+
+        ArrayList list = new ArrayList();
+
+        int i=0;
+
+        Console.WriteLine("informe 10 palavras ");
+
+        while(i<10){
+            string palavra;
+
+        
+        palavra = Console.ReadLine();
+
+        list.Add(palavra);
+        i++;
+        }
+        Console.WriteLine("\n\npalavras digitados");
+        foreach(string palavra in list){
+            Console.WriteLine(palavra);
+
+        }
+    }
+}
