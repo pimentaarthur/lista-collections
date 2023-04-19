@@ -1,0 +1,30 @@
+using System;
+
+using System.Collections;
+
+class program{
+
+    static void Main(String [] args){
+
+        ArrayList list = new ArrayList();
+
+        int i=0;
+
+        Console.WriteLine("informe 10 números ");
+
+        while(i<11){
+            int numero;
+
+        
+        numero = int.Parse(Console.ReadLine());
+
+        list.Add(numero);
+        i++;
+        }
+        Console.WriteLine("números digitados");
+        foreach(int numero in list){
+            Console.WriteLine(numero);
+
+        }
+    }
+}
