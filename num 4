@@ -1,0 +1,30 @@
+using System;
+using System.Collections;
+
+
+    class program{
+
+    static void Main(String [] args){
+
+        int total=0;
+
+        ArrayList arrayList = new ArrayList();
+
+          for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                arrayList.Add(i);
+            }
+        }  
+
+       int count=0;
+       while(count<arrayList.Count){
+        total +=(int) arrayList[count];
+        count++;
+       }
+
+       Console.WriteLine(total);
+
+    
+}
+}
+
