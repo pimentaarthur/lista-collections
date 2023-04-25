@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+
+class Program {
+    static void Main(string[] args) {
+        Queue<int> numeros = new Queue<int>();
+
+          Console.Write("Digite a quantidade de números a serem lidos: ");
+           int n = int.Parse(Console.ReadLine());
+
+           for (int i = 0; i < n; i++) {
+            Console.Write($"Digite o {i+1}º número: ");
+            int numero = int.Parse(Console.ReadLine());
+            numeros.Enqueue(numero);
+        }
+
+          int soma =0;
+        
+          foreach(int numero in numeros){
+           soma += numero;
+      }
+
+        double media;
+
+        media = soma/n;
+
+        Console.WriteLine("Soma dos números: " +soma);
+        Console.WriteLine("Média dos números: "+media);
+    }
+}
