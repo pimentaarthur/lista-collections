@@ -1,0 +1,37 @@
+using System;
+using System.Collections;
+
+
+    class program{
+
+    static void Main(String [] args){
+
+        int total=0;
+
+        ArrayList arrayList = new ArrayList(){5, 13, 19, 31, 3, 7, 11, 5, 57, 13, 5};
+
+         Console.WriteLine("arraylist com os números 5, 13");
+        for(int i =0; i<arrayList.Count;i++){
+          Console.WriteLine(arrayList[i]+" ");
+        }
+
+
+        apaganumero(arrayList,5);
+        apaganumero(arrayList,13);
+
+        Console.WriteLine("arraylist sem os números 5, 13");
+        
+        for(int i =0; i<arrayList.Count;i++){
+          Console.WriteLine(arrayList[i]+" ");
+        }
+       
+    
+}
+    static void apaganumero(ArrayList arrayList,int numero){
+
+      while (arrayList.Contains(numero)){
+        arrayList.Remove(numero);
+      }
+    }
+}
+
