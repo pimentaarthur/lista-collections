@@ -1,0 +1,50 @@
+using System;
+using System.Collections;
+
+
+    class program{
+
+    static void Main(String [] args){
+
+      int n;
+      ArrayList arrayList = new ArrayList();
+      string decisao = "SIM";
+
+      while(decisao == "SIM"){
+
+        Console.WriteLine("informe um número para calcular o somatorio e a media");
+        n = int.Parse(Console.ReadLine());
+
+        arrayList.Add(n);
+
+        Console.WriteLine("você quer inserir mais um número?/ninforme SIM ou qualquer outra tecla para Não");
+         
+        decisao = Console.ReadLine();
+        decisao = decisao.ToUpper();
+  
+      }
+      int soma=0;
+
+      for(int i =0; i<arrayList.Count;i++){
+
+        soma += (int)arrayList[i];
+      }
+
+      double media=0;
+
+      foreach(int numero in arrayList){
+
+        media = soma/arrayList.Count;
+
+      }
+
+      Console.WriteLine("somatoria do arraylist = "+soma);
+      Console.WriteLine("media do arraylist = "+media);
+      
+
+      
+
+        
+    }
+}
+
